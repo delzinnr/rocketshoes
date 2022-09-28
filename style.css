@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --button: #ff0000;
+  --main-background: #c4c4c4;
+  --background: #e5e5e5;
+  --text: #000;
+  --footer: #000;
+  --text-description: #9c9696;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: min(1380px, 100%);
+  padding-inline: 2rem;
+  margin: auto;
+}
+
+header {
+  margin-top: 40px;
+  position: relative;
+
+  z-index: 999;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  gap: 90px;
+}
+
+header ul li a {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+
+  text-transform: uppercase;
+}
+
+header .search {
+  position: relative;
+}
+
+header .search input {
+  width: 220px;
+  height: 45px;
+  padding: 14px 14px 14px 40px;
+
+  border: none;
+  border-radius: 8px;
+}
+
+header .search img {
+  position: absolute;
+  z-index: 1;
+
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+}
+
+#home {
+  padding-top: 100px;
+}
+
+#home .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  position: relative;
+}
+
+#home .content {
+  max-width: 357px;
+  margin-inline: auto;
+}
+
+#home .col-1 .title {
+  font-size: 60px;
+}
+
+#home .col-1 .subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-description);
+
+  margin-block: 21px;
+}
+
+#home .col-1 span {
+  font-size: 40px;
+  font-weight: 700;
+
+  display: block;
+
+  margin-bottom: 30px;
+}
+
+#home .col-1 button {
+  width: 274px;
+  height: 90px;
+  padding: 30px 75px;
+
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+
+  background: var(--button);
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+#home .col-2 .amplied {
+  max-width: 600px;
+  display: flex;
+  margin-inline: auto;
+}
+
+#home .col-2 .gallery {
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer .social {
+  display: flex;
+  gap: 90px;
+}
+
+#footer .social li a {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+}
+
+#footer button {
+  width: 473px;
+  height: 166px;
+
+  padding: 71px 116px 67px 116px;
+
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+
+  background-color: var(--footer);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 14px;
+
+  border: none;
+
+  cursor: pointer;
+
+  text-transform: uppercase;
+}
